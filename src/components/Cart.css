@@ -1,0 +1,148 @@
+
+
+#cart {
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 15rem;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans';
+}
+
+.cart-header {
+    font-size: 15px;
+    padding: 1rem;
+
+}
+.cart-hr {
+    width: 100%;
+    /* border-color: rgb(202, 197, 197); */
+}
+.empty-cart {
+    /* display: none; */
+    margin: 0 auto;
+    /* margin-bottom: 5rem; */
+    margin-top: 5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    color: grey;
+}
+.cart-info-withBtn {
+    display: flex;
+    flex-direction: column;
+}
+.cart-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.cart-img-num {
+    display: flex;
+}
+
+.cart-image {
+    width: 4rem;
+    border-radius: 5px;
+}
+
+.cart-info-text {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    gap: 5px;
+}
+.sneakers-para {
+    text-transform: capitalize;
+}
+
+.trash {
+    cursor: pointer;
+}
+
+.cart-info-below {
+    display: flex;
+    gap: 5px;
+}
+
+.cart-total-price {
+    color: black;
+    font-weight: bold;
+}
+
+.cart-button {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(26, 100%, 55%);
+    letter-spacing: 1px;
+    gap: 1rem;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background-color: hsl(26, 87%, 62%);
+}
+
+
+@media screen and (min-width: 760px) {
+    #cart {
+        position: absolute;
+        transform: translate(0, 0);
+        top: 5rem;
+        left: 70%;
+        width: 20rem;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .empty-cart {
+        margin-top: 10%;
+        margin-bottom: 5rem;
+    }
+    .cart-hr {
+        width: 100%;
+        /* border-color: rgb(202, 197, 197); */
+    }
+    .cart-info {
+        gap: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .cart-image {
+        width: 3rem;
+    }
+    .cart-info-text {
+        font-size: 14px;
+    }
+ 
+    .cart-button {
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1200px)  {
+    #cart {
+        left: 58%;
+    }
+}
